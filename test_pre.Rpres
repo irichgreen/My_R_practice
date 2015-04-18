@@ -1,0 +1,28 @@
+This is my R Presentation
+========================================================
+author: Jin-Hoon An
+date: Feb. 17, 2015
+
+First Slide
+========================================================
+
+For more details on authoring R presentations click the
+**Help** button on the toolbar.
+
+- Demo Slide
+- Plots
+- Visualization
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
