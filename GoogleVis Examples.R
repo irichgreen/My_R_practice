@@ -1,3 +1,17 @@
+download.file(destfile = "fargoTemps2014.csv", url="https://raw.githubusercontent.com/smach/Rin5lines/master/data/fargoTemps2014.csv") 
+
+fargo <- read.csv("fargoTemps2014.csv", colClasses = c("Date", "integer", "integer"))
+
+library("googleVis")
+mychart <- gvisLineChart(fargo, options=list(gvis.editor="Edit this chart", width=1000, height=600))
+plot(mychart)
+
+vignette("googleVis_examples", package="googleVis") .
+
+?vignette
+
+## ------------------------------------------------
+
 install.packages("googleVis")
 library(googleVis)
 data(Fruits)
@@ -39,4 +53,6 @@ x$Rating <- paste(x$Country, x$Rating, sep=":")
 # Create a geo chart
 G8 <- gvisGeoChart(x, "Country", "Ranking", hovervar="Rating", options=list(gvis.editor="S&P", colorAxis="{colors:['*#91BFDB,', '*#FC8D59,']}"))
 plot(G8)
+
+
 

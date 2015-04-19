@@ -106,14 +106,30 @@ install.packages("ROAuth")              #— Twitter 접속
 install.packages("Rfacebook")           #— Facebook 접속
 install.packages("Rook")                #— Facebook 접속
 
+library(devtools)
+
 # Interactive time series with dygraphs
 install.packages("dygraphs")
 install.packages("readr")
+install.packages("readxl")
 install.packages("roxygen2")
 install_github("hadley/bookdown")
 install.packages("gridExtra")
 install.packages("logging")
 install.packages("installr")            #— R 버전 업그레이드
 install.packages("RGoogleAnalytics")
+install.packages("extrafont")
+install.packages("episensr")
 
+# 웹에서 하는 통계 (web-r.org)
+install.packages("moonBook")
+install.packages("ztable")
+install.packages("mycor")
 
+# Useful new R packages for data visualization and analysis
+library(devtools)
+install_github("rstudio/leaflet")
+install_github("ramnathv/slidify")
+install_github("ramnathv/slidifyLibraries")
+install.packages("RTextTools", type="source")
+install.packages("rvest")
