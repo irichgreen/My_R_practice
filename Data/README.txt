@@ -1,6 +1,16 @@
-The files inside subfolder "RAE-UoA22" are as downloaded on 18 November 2014 from the RAE 2008 website, at the URL
+This folder contains supplementary materials (data, R code, and an explanatory PDF document) for the paper "Statistical Modelling of Citation Exchange Between Statistics Journals" by C Varin, M Cattelan and D Firth.
 
-http://www.rae.ac.uk/submissions/outstore/CSV-ANSI/ByUOA/22%20-%20Statistics%20and%20Operational%20Research.zip
+The explanatory PDF document is
+         JRSS-PR-SA-Dec-13-0008_supplement.pdf
 
-All of the files /not/ inside that subfolder were made by the authors of the paper 
-Varin C., Cattelan M. and Firth D. (2015). Statistical modelling of citation exchange between statistics journals. Journal of the Royal Statistical Society Series A, to appear.
+The data files are all comma-separated text files, which can be opened by (for example) many spreadsheet programs.
+
+The main R script file, which replicates the analyses presented in the paper, is 
+         JRSS-PR-SA-Dec-13-0008_supplement.R
+Section numbers in that file are as in the explanatory PDF document.
+
+Before running the R code in that file, the following R "add-on" packages should be installed (from one of the CRAN repositories):
+         "car", "qvcalc", "BradleyTerry2", "plotrix"
+         
+
+

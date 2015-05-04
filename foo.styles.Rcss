@@ -1,0 +1,8 @@
+points.foo {
+    cex: 1.0;
+}
+
+points.bar {
+    cex: 0.3;
+    pch: 19;
+}

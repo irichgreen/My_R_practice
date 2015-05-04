@@ -6,7 +6,10 @@ library(plyr)
 library(sqldf)
 library(scales)
 library(gplots)
-setwd("YOUR WORKING DIRECTORY HERE")
+library(dplyr)
+library(htmltools)
+
+#setwd("YOUR WORKING DIRECTORY HERE")
 maraton_web="http://www.maratonmadrid.org/resultados/clasificacion.asp?carrera=13&parcial=par1&clasificacion=1&dorsal=&nombre=&apellidos=&pais=&pagina=par2"
 #Grid with parameters to navigate in the web to do webscraping
 searchdf=rbind(expand.grid( 1, 0:32), expand.grid( 2, 0:55), expand.grid( 3, 0:56), expand.grid( 4, 0:56),

@@ -121,7 +121,7 @@ install.packages("RGoogleAnalytics")
 install.packages("extrafont")
 install.packages("episensr")
 
-# 웹에서 하는 통계 (web-r.org)
+# 웹에서 하는 통계 (web-r.org)  
 install.packages("moonBook")
 install.packages("ztable")
 install.packages("mycor")
@@ -129,7 +129,22 @@ install.packages("mycor")
 # Useful new R packages for data visualization and analysis
 library(devtools)
 install_github("rstudio/leaflet")
+install_github("ramnathv/rCharts")
 install_github("ramnathv/slidify")
 install_github("ramnathv/slidifyLibraries")
 install.packages("RTextTools", type="source")
 install.packages("rvest")
+
+install.packages("drat", repos="http://cran.rstudio.com")
+library(drat)
+drat::addRepo(c("eddelbuettel", "RcppCore", "ghrr"))
+insertPackage("drat_0.0.3.tar.gz")
+
+install_github("ramnathv/htmlwidgets")
+install_github("rich-iannone/DiagrammeR")
+
+# Radiant : A shiny interface for R package
+install.packages("radiant", repos = "http://vnijs.github.io/radiant_miniCRAN/")
+
+# Geomorph beta package
+install_github("EmSherratt/geomorph",ref = "Develop")
