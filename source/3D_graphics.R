@@ -15,13 +15,12 @@ library(rgl)
 library(mgcv)
 
 scatter3d(iris[,1],iris[,2],iris[,3],bg.col="black",axis.col=c("white","white","white"),xlab=colnames(iris)[1],ylab=colnames(iris)[2],zlab=colnames(iris)[3],revolutions=0,grid=FALSE,groups=factor(iris$Species),ellipsoid=TRUE,surface=FALSE)
-
 library(plyr)
 library(dplyr)
 library(ggplot2)
 library(locfit)
 library(plotrix)
-r1 <- read.csv('KNMI_20141130.edited.txt')
+r1 <- read.csv('data/KNMI_20141130.edited.txt')
 Sys.setlocale(category = "LC_TIME", locale = "C")
 r2 <- mutate(r1,
              date = as.Date(format(YYYYMMDD),'%Y%m%d'),

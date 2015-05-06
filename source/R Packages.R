@@ -148,3 +148,7 @@ install.packages("radiant", repos = "http://vnijs.github.io/radiant_miniCRAN/")
 
 # Geomorph beta package
 install_github("EmSherratt/geomorph",ref = "Develop")
+
+library(devtools)
+install.packages("choroplethr")
+install_github('arilamstein/choroplethrZip')
