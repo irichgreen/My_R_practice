@@ -152,3 +152,9 @@ install_github("EmSherratt/geomorph",ref = "Develop")
 library(devtools)
 install.packages("choroplethr")
 install_github('arilamstein/choroplethrZip')
+
+#stringr packages
+install.packages("stringr")
+install_github('Rexamine/stringi')
+
+
